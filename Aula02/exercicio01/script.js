@@ -12,6 +12,6 @@ nomealuno = prompt("Digite o nome de outro aluno: ")
 idadealuno = parseInt(prompt("digite oa idade do aluno: "))
 idadealuno += 10
 
-console.log(`<br>O nome do outro aluno é <strong>${nomealuno}</strong>!! `)
-console.log(`A idade desse aluno é <strong>${idadealuno}</strong>`)
+document.write(`<br>O nome do outro aluno é <strong>${nomealuno}</strong>!! `)
+document.write(`A idade desse aluno é <strong>${idadealuno}</strong>`)
 
