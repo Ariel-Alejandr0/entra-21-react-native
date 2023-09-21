@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>por id</title>
+</head>
+
+<body>
+    <h1>Exemplo de onChange</h1>
+
+    <form>
+        <label for="fruta">Escolha uma fruta</label>
+        <select id="fruta" onchange="mostrarSelecao()">
+            <option value="maçã">Maçã</option>
+            <option value="banana">Banana</option>
+            <option value="laranja">Laranja</option>
+        </select>
+    </form>
+
+    <p id="mensagem"></p>
+
+    <script>
+        function mostrarSelecao(){
+            let frutaSelecionada = document.getElementById("fruta").value;
+            let mensagem         = document.getElementById('mensagem');
+
+            mensagem.textContent = "Você escolheu " + frutaSelecionada;
+        }
+    </script>
+</body>
+
+</html>

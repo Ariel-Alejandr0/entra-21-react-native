@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>por id</title>
+</head>
+
+<body>
+    <div>
+        <h1 id="id_h1" class="classe_h1">Praias de Santa-Catarina</h1>
+        <div>
+            <p>***As mais limpas***</p>
+        </div>
+        <p id="p_praia1" name="nome_praia1" class="ocuto">Poá</p>
+        <p id="p_praia2" name="nome_praia2" class="praia2">Bombinhas</p>
+        <p id="p_praia3" name="nome_praia3">Taquaras</p>
+        <p id="p_praia4" name="nome_praia4">Sepultura</p>
+    </div>
+    <h1 id="id_h12"></h1>
+
+    <script>
+        let paragrafos = document.getElementsByTagName('p');
+        for(let qtdeParagrafos = 0; qtdeParagrafos < paragrafos.length; qtdeParagrafos++){
+            document.write(paragrafos[qtdeParagrafos].innerHTML + "<br>");
+        }
+        let elemento = document.getElementsByName("nome_praia2");
+        console.log(elemento);
+
+
+        function mudarConteudo(){
+            document.getElementById("p_praia3").innerHTML = "Arvoredo";
+        }
+        function localizarPraia(){
+            let elementos = document.getElementsByName("nome_praia3");
+            console.log(elementos);
+        }
+        mudarConteudo();
+        localizarPraia();
+    </script>
+</body>
+
+</html>

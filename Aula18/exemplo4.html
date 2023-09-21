@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>por id</title>
+</head>
+
+<body>
+    <button id="mensagem" onclick="saudacao()">saudação</button>
+
+    <script>
+        let cont = 1
+        
+        function saudacao(){
+            for (let index = 0; index < cont; index++) {
+                alert("Bom Dia!!" + cont);
+            }
+            cont = cont + Math.pow(cont, 2)
+        }
+    </script>
+</body>
+
+</html>

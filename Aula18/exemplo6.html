@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>por id</title>
+</head>
+
+<body>
+    <button id="alerta">Alerta</button>
+
+    <script>
+        function somarValores(valor1, valor2) {
+            let soma = valor1 + valor2;
+            alert(soma);
+        }
+        
+        window.onload = function(){
+            let botaoSomar  = document.getElementById("alerta");
+            
+
+            botaoSomar.onclick = function(){
+                botaoSomar.style.backgroundColor = "red"
+                somarValores(10, 5);
+            }
+        }
+    </script>
+</body>
+
+</html>

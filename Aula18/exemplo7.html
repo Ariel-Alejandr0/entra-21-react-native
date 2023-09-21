@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>por id</title>
+</head>
+
+<body>
+    <h1>Exemplo de onBlur</h1>
+
+    <form>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" onblur="validarNome()">
+        <p id="mensagem">Esperando digitar nome</p>
+    </form>
+
+    <script>
+        function validarNome() {
+            let nomeInput = document.getElementById("nome");
+            let mensagem  = document.getElementById("mensagem");
+
+            if (nomeInput.value === '') {
+                mensagem.textContent = 'Por favor, preencha o campo Nome.';
+            } else {
+                mensagem.textContent = '';
+            }
+        }
+    </script>
+</body>
+
+</html>
