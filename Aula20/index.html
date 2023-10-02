@@ -8,6 +8,7 @@
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="estilos.css">
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
@@ -37,40 +38,43 @@
                 </div>    
 
                 <label>Nome do propretario</label>
-                <input type="text" placeholder="Informe o nome do propretario" id="propretario" name="propretario" required="true" maxlength="10"> <br>
+                <input type="text" placeholder="Informe o nome do propretario" id="proprietario" name="proprietario" required="true" maxlength="40"> <br>
                 
 
                 <label>Número do Apartamento</label>
                 <div class="tresDigitos">
-                    <input type="text" id="Apartamento" name="Apartamento" required="true" maxlength="3"><br>
+                    <input type="text" id="apartamento" name="apartamento" required="true" maxlength="3"><br>
                 </div>
                 
 
                 <label>Número do Bloco</label>
                 <div class="tresDigitos">
-                    <input type="text" id="Bloco" name="Bloco" required="true" maxlength="3"><br>
+                    <input type="text" id="bloco" name="bloco" required="true" maxlength="3"><br>
                 </div>
                 
                 <label>Nome do Modeleo</label>
-                <input type="text" id="Modeleo" name="Modeleo" required="true" maxlength="40"><br>
+                <input type="text" id="modelo" name="modelo" required="true" maxlength="40"><br>
 
                 <label>cor do veículo</label>
-                <input type="text" id="cor" name="cor" required="flase" maxlength="30"><br>
+                <input type="text" id="cor" name="cor" required="false" maxlength="30"><br>
 
                 <label>Número da vaga</label>
                 <div class="tresDigitos">
-                    <input type="text" id="numvaga" name="numvaga" required="true" maxlength="3"><br>
+                    <input type="text" id="vaga" name="vaga" required="true" maxlength="3"><br>
                 </div>
                 
                 <button type="submit" class="btn btn-success">Salvar</button>
-                <button type="reset" class="btn btn-danger">Resetar</button>
+                <button type="reset" class="btn btn-danger">Cancelar</button>
             </form>
         </section>
         <hr>
         <section id="lista">
             <h1>Consulta de vagas</h1>
+            <ul id="vagas-list"></ul>
         </section>
     </main>
+
+    <script src="script.js"></script>
 
 </body>
 
