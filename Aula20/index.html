@@ -8,7 +8,7 @@
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="estilos.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
@@ -30,7 +30,7 @@
         <section id="cadastro">
             <form id="cadastro-form">
 
-                <h1>h1 - cadastramento de vagas</h1>
+                <h1>cadastramento de vagas<i class="fa fa-car"></i></h1>
 
                 <label>Número da placa</label>
                 <div class="placa">
@@ -40,6 +40,8 @@
                 <label>Nome do propretario</label>
                 <input type="text" placeholder="Informe o nome do propretario" id="proprietario" name="proprietario" required="true" maxlength="40"> <br>
                 
+                <label for="email"> e-mail</label>
+                <input type="email" id="email" name="email" required="true" maxlength="50">
 
                 <label>Número do Apartamento</label>
                 <div class="tresDigitos">
