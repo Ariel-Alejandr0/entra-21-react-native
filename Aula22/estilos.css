@@ -1,0 +1,54 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+h1 {
+    color: brown;
+    font-size: 20px;
+    font-weight: bold;
+}
+form {
+    width: 360px;
+    margin: auto;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #1D1D1D;
+    border-color: #1d1d1d;
+    background-color: #ebdbb2;
+    filter: drop-shadow(1px 1px 5px);
+}
+label{
+    display: block;
+    margin-bottom: 5px;
+    color: #1D1D1D;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input[type="text"], input[type="email"]{
+    width: 80%;
+    padding: 5px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+}
+.separaMenu{
+    padding: 10px;
+}
+.placa{
+    width: 40%;
+    color: red;
+    font-style: italic;
+}
+.tresDigitos{
+    width: 20%;
+
+}
+
+i{
+    padding-left: 3px;
+}
+button{
+    transition: transform 1s ease;
+}
+button:hover{
+    transform: scale(1.05);
+    filter: drop-shadow(5px 5px 1px black);
+}
